@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luiz Flix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h1>Luiz<span>Flix</span></h1>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#movies">Movies</a>
+        <a href="#series">TV Shows</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero" id="home">
+        <p class="label">WELCOME TO LUIZ FLIX</p>
+        <h2>Movies & TV Shows</h2>
+        <p>Explore the collection and click on a title to see its details.</p>
+    </section>
+
+    <section class="catalog" id="movies">
+        <h2>Movies</h2>
+
+        <div class="card-grid">
+
+            <article class="card">
+                <img src="img/avengers-infinity-war.jpg" alt="Avengers: Infinity War">
+                <div class="card-content">
+                    <h3>Avengers: Infinity War</h3>
+                    <p>2018 • Action • Adventure • Sci-Fi</p>
+                    <button onclick="openDetails('infinity-war')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/batman.jpg" alt="The Dark Knight">
+                <div class="card-content">
+                    <h3>The Dark Knight</h3>
+                    <p>2008 • Action • Crime • Drama</p>
+                    <button onclick="openDetails('dark-knight')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/the-godfather.jpg" alt="The Godfather">
+                <div class="card-content">
+                    <h3>The Godfather</h3>
+                    <p>1972 • Crime • Drama</p>
+                    <button onclick="openDetails('godfather')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/madagascar.jpg" alt="Madagascar">
+                <div class="card-content">
+                    <h3>Madagascar</h3>
+                    <p>2005 • Animation • Comedy • Family</p>
+                    <button onclick="openDetails('madagascar')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/mission-impossible-fallout.jpg" alt="Mission: Impossible - Fallout">
+                <div class="card-content">
+                    <h3>Mission: Impossible — Fallout</h3>
+                    <p>2018 • Action • Adventure • Thriller</p>
+                    <button onclick="openDetails('fallout')">View Details</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="catalog" id="series">
+        <h2>TV Shows</h2>
+
+        <div class="card-grid">
+
+            <article class="card">
+                <img src="img/the-mentalist.jpg" alt="The Mentalist">
+                <div class="card-content">
+                    <h3>The Mentalist</h3>
+                    <p>2008 • Crime • Drama • Mystery</p>
+                    <button onclick="openDetails('mentalist')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/smallville.jpg" alt="Smallville">
+                <div class="card-content">
+                    <h3>Smallville</h3>
+                    <p>2001 • Action • Drama • Sci-Fi</p>
+                    <button onclick="openDetails('smallville')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/breaking-bad.jpg" alt="Breaking Bad">
+                <div class="card-content">
+                    <h3>Breaking Bad</h3>
+                    <p>2008 • Crime • Drama • Thriller</p>
+                    <button onclick="openDetails('breaking-bad')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/regular-show.jpg" alt="Regular Show">
+                <div class="card-content">
+                    <h3>Regular Show</h3>
+                    <p>2009 • Animation • Comedy</p>
+                    <button onclick="openDetails('regular-show')">View Details</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="img/loki.jpg" alt="Loki">
+                <div class="card-content">
+                    <h3>Loki</h3>
+                    <p>2021 • Action • Adventure • Fantasy</p>
+                    <button onclick="openDetails('loki')">View Details</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<div class="modal" id="detailsModal">
+    <div class="modal-box">
+
+        <button class="close" onclick="closeDetails()">×</button>
+
+        <img id="modalImage" src="" alt="">
+
+        <div class="modal-content">
+            <h2 id="modalTitle"></h2>
+            <p id="modalInfo"></p>
+            <p id="modalDescription"></p>
+        </div>
+
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 Luiz Flix</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

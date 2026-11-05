@@ -92,7 +92,7 @@ This project was created as a front-end development project to practice and demo
 
 ## 👨‍💻 Author
 
-**Luiz Henrique**
+**Luiz Henrique Crispim**
 
 ---
 
